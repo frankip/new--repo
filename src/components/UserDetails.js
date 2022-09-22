@@ -13,7 +13,7 @@ function UserDetails({user, handleDelete}) {
       <h6>{`Gender - ${user.gender}`}</h6>
       <h5>{user.job_title}</h5>
 
-      <button className='btn btn-danger'onClick={()=>handleRemove(user.id)}>remove</button>
+      <button className='btn btn-outline-danger'onClick={()=>handleRemove(user.id)}>remove</button>
     </div>
   );
 }
