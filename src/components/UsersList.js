@@ -10,7 +10,7 @@ function UsersList() {
   });
   // console.log(all);
   return (
-    <div>
+    <div className="row">
         <h3>UsersList</h3>
         {all}
     </div>
