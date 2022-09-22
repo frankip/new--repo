@@ -5,12 +5,14 @@ import { users } from "./data";
 function UsersList() {
   const [allUsers, setAllUsers] = useState(users);
 
-  console.log("all", allUsers);
+  const all = allUsers.map((user)=>{
+    return <UserDetails user={user}/>
+  });
+  // console.log(all);
   return (
     <div>
         <h3>UsersList</h3>
-
-        <UserDetails/>
+        {all}
     </div>
   )
 }
