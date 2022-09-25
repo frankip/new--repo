@@ -50,3 +50,8 @@
     {"id":49,"image":"https://robohash.org/dolorumlaboreharum.png?size=50x50&set=set1","first_name":"Mary","last_name":"Broker","email":"mbroker1c@mediafire.com","gender":"Female","job_title":"Electrical Engineer"},
     {"id":50,"image":"https://robohash.org/ullamfugitimpedit.png?size=50x50&set=set1","first_name":"Riordan","last_name":"Stallworth","email":"rstallworth1d@shareasale.com","gender":"Male","job_title":"GIS Technical Architect"}
 ]
+
+export const NextId =()=>{
+    console.log("users.length + 1");
+    return users[users.length - 1].id + 1; 
+}
